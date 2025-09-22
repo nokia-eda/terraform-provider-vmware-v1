@@ -1,0 +1,14 @@
+Path,Method,Schema,Model Name,Supported,Datasource,Resource
+/apps/vmware.eda.nokia.com,GET,AppGroup,app_group,true,true,false
+/apps/vmware.eda.nokia.com/v1,GET,ResourceList,resource_list,true,true,false
+/apps/vmware.eda.nokia.com/v1/_ui/{pathname},GET,UIResult,,false,false,false
+/apps/vmware.eda.nokia.com/v1/vmwareplugininstances,DELETE,com.nokia.eda.vmware.v1.VmwarePluginInstanceList,,false,false,false
+/apps/vmware.eda.nokia.com/v1/vmwareplugininstances,GET,com.nokia.eda.vmware.v1.VmwarePluginInstanceList,vmware_plugin_instance_list,true,true,false
+/apps/vmware.eda.nokia.com/v1/vmwareplugininstances,POST,com.nokia.eda.vmware.v1.VmwarePluginInstance,vmware_plugin_instance,true,false,true
+/apps/vmware.eda.nokia.com/v1/vmwareplugininstances/_deleted,GET,com.nokia.eda.vmware.v1.VmwarePluginInstance_DeletedResources,,false,false,false
+/apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name},DELETE,Status,vmware_plugin_instance,true,false,true
+/apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name},GET,com.nokia.eda.vmware.v1.VmwarePluginInstance,vmware_plugin_instance,true,true,true
+/apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name},PATCH,Patch,,false,false,false
+/apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name},PUT,com.nokia.eda.vmware.v1.VmwarePluginInstance,vmware_plugin_instance,true,false,true
+/apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name}/_revs,GET,ResourceHistory,,false,false,false
+/apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name}/_topology,GET,ResourceTopology,,false,false,false

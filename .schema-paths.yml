@@ -1,0 +1,87 @@
+app_group:
+  - read:
+      path: /apps/vmware.eda.nokia.com
+      method: GET
+
+patch:
+  - update:
+      path: /apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name}
+      method: PATCH
+
+resource_history:
+  - read:
+      path: /apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name}/_revs
+      method: GET
+
+resource_list:
+  - read:
+      path: /apps/vmware.eda.nokia.com/v1
+      method: GET
+
+resource_topology:
+  - read:
+      path: /apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name}/_topology
+      method: GET
+
+status:
+  - delete:
+      path: /apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name}
+      method: DELETE
+
+ui_result:
+  - read:
+      path: /apps/vmware.eda.nokia.com/v1/_ui/{pathname}
+      method: GET
+
+com.nokia.eda.vmware.v1.vmware_plugin_instance:
+  - create:
+      path: /apps/vmware.eda.nokia.com/v1/vmwareplugininstances
+      method: POST
+  - read:
+      path: /apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name}
+      method: GET
+  - update:
+      path: /apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name}
+      method: PUT
+
+com.nokia.eda.vmware.v1.vmware_plugin_instance_list:
+  - read:
+      path: /apps/vmware.eda.nokia.com/v1/vmwareplugininstances
+      method: GET
+  - delete:
+      path: /apps/vmware.eda.nokia.com/v1/vmwareplugininstances
+      method: DELETE
+
+com.nokia.eda.vmware.v1.vmware_plugin_instance_deleted_resources:
+  - read:
+      path: /apps/vmware.eda.nokia.com/v1/vmwareplugininstances/_deleted
+      method: GET
+
+totalPaths: 8
+totalSchemas: 33
+usedSchemas: 10
+unusedSchemas: 23
+unusedSchemaList:
+  - AppGroupVersion
+  - ErrorIndex
+  - ErrorItem
+  - ErrorResponse
+  - K8SPatchOp
+  - OverlayState
+  - Resource
+  - ResourceHistoryEntry
+  - StatusDetails
+  - TopoAttrMetadata
+  - TopoElemMetadata
+  - TopoLinkEndpoint
+  - TopoNodeGrouping
+  - TopoOverlayEndpoint
+  - TopoOverlayEndpointState
+  - TopoOverlayLink
+  - TopoOverlayLinkState
+  - TopoOverlayNode
+  - TopoOverlayNodeState
+  - TopoSchema
+  - Topology
+  - com.nokia.eda.vmware.v1.VmwarePluginInstance_DeletedResourceEntry
+  - com.nokia.eda.vmware.v1.VmwarePluginInstance_metadata

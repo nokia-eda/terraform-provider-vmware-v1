@@ -1,0 +1,38 @@
+provider:
+  name: vmware
+
+data_sources:
+  app_group:
+    read:
+      path: /apps/vmware.eda.nokia.com
+      method: GET
+
+  resource_list:
+    read:
+      path: /apps/vmware.eda.nokia.com/v1
+      method: GET
+
+  vmware_plugin_instance:
+    read:
+      path: /apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name}
+      method: GET
+
+  vmware_plugin_instance_list:
+    read:
+      path: /apps/vmware.eda.nokia.com/v1/vmwareplugininstances
+      method: GET
+
+resources:
+  vmware_plugin_instance:
+    create:
+      path: /apps/vmware.eda.nokia.com/v1/vmwareplugininstances
+      method: POST
+    read:
+      path: /apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name}
+      method: GET
+    update:
+      path: /apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name}
+      method: PUT
+    delete:
+      path: /apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name}
+      method: DELETE
