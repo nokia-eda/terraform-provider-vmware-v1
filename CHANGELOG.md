@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.0
+
+Initial release.
+
 ## 0.1.1
 
 Trigger release pipeline.

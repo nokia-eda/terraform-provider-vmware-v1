@@ -11,4 +11,6 @@ Path,Method,Schema,Model Name,Supported,Datasource,Resource
 /apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name},PATCH,Patch,,false,false,false
 /apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name},PUT,com.nokia.eda.vmware.v1.VmwarePluginInstance,vmware_plugin_instance,true,false,true
 /apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name}/_revs,GET,ResourceHistory,,false,false,false
+/apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name}/_targets,GET,IntentTargets,,false,false,false
 /apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name}/_topology,GET,ResourceTopology,,false,false,false
+/apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name}/_topology,POST,K8STopologyRequest,,false,false,false

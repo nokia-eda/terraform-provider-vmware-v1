@@ -3,6 +3,16 @@ app_group:
       path: /apps/vmware.eda.nokia.com
       method: GET
 
+intent_targets:
+  - read:
+      path: /apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name}/_targets
+      method: GET
+
+k8_s_topology_request:
+  - create:
+      path: /apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name}/_topology
+      method: POST
+
 patch:
   - update:
       path: /apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name}
@@ -57,31 +67,50 @@ com.nokia.eda.vmware.v1.vmware_plugin_instance_deleted_resources:
       path: /apps/vmware.eda.nokia.com/v1/vmwareplugininstances/_deleted
       method: GET
 
-totalPaths: 8
-totalSchemas: 33
-usedSchemas: 10
-unusedSchemas: 23
+totalPaths: 9
+totalSchemas: 54
+usedSchemas: 12
+unusedSchemas: 42
 unusedSchemaList:
   - AppGroupVersion
   - ErrorIndex
   - ErrorItem
   - ErrorResponse
+  - IntentTarget
   - K8SPatchOp
   - OverlayState
   - Resource
   - ResourceHistoryEntry
   - StatusDetails
   - TopoAttrMetadata
+  - TopoAttribute
+  - TopoBoolExpression
+  - TopoBoolLiteral
   - TopoElemMetadata
-  - TopoLinkEndpoint
+  - TopoEndpointBoolExpression
+  - TopoField
+  - TopoFixedBoolExpression
+  - TopoLabelSelector
+  - TopoLiteralStatusOrBadge
+  - TopoLiteralValue
+  - TopoLogicalExpression
   - TopoNodeGrouping
   - TopoOverlayEndpoint
   - TopoOverlayEndpointState
   - TopoOverlayLink
+  - TopoOverlayLinkGroup
+  - TopoOverlayLinkGroupEndpoint
   - TopoOverlayLinkState
   - TopoOverlayNode
+  - TopoOverlayNodeOrGroup
   - TopoOverlayNodeState
+  - TopoOverlayValue
   - TopoSchema
+  - TopoStateFilter
+  - TopoValue
+  - TopoValueExpression
   - Topology
   - com.nokia.eda.vmware.v1.VmwarePluginInstance_DeletedResourceEntry
+  - com.nokia.eda.vmware.v1.VmwarePluginInstance_alarms
+  - com.nokia.eda.vmware.v1.VmwarePluginInstance_deviations
   - com.nokia.eda.vmware.v1.VmwarePluginInstance_metadata

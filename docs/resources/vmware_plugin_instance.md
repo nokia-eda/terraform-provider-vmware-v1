@@ -22,7 +22,9 @@ description: |-
 
 ### Optional
 
+- `alarms` (Attributes) (see [below for nested schema](#nestedatt--alarms))
 - `api_version` (String)
+- `deviations` (Attributes) (see [below for nested schema](#nestedatt--deviations))
 - `kind` (String)
 - `name` (String) name of the VmwarePluginInstance
 - `status` (Attributes) VmwarePluginInstanceStatus defines the observed state of VmwarePluginInstance (see [below for nested schema](#nestedatt--status))
@@ -38,6 +40,7 @@ Optional:
 
 - `annotations` (Map of String)
 - `labels` (Map of String)
+- `namespace` (String)
 
 
 <a id="nestedatt--spec"></a>
@@ -56,6 +59,25 @@ Optional:
 - `plugin_namespace` (String) PluginNamespace is the namespace for the custom resources.
 - `vcsa_certificate` (String) VCSACertificate is the certificate for the server to verify.
 - `vcsa_tls_verify` (Boolean) VCSATLSVerify defines whether the client verifies the server's certificate.
+
+
+<a id="nestedatt--alarms"></a>
+### Nested Schema for `alarms`
+
+Optional:
+
+- `critical` (Number)
+- `major` (Number)
+- `minor` (Number)
+- `warning` (Number)
+
+
+<a id="nestedatt--deviations"></a>
+### Nested Schema for `deviations`
+
+Optional:
+
+- `count` (Number)
 
 
 <a id="nestedatt--status"></a>
