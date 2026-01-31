@@ -8,7 +8,7 @@ Path,Method,Schema,Model Name,Supported,Datasource,Resource
 /apps/vmware.eda.nokia.com/v1/vmwareplugininstances/_deleted,GET,com.nokia.eda.vmware.v1.VmwarePluginInstance_DeletedResources,,false,false,false
 /apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name},DELETE,Status,vmware_plugin_instance,true,false,true
 /apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name},GET,com.nokia.eda.vmware.v1.VmwarePluginInstance,vmware_plugin_instance,true,true,true
-/apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name},PATCH,Patch,,false,false,false
+/apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name},PATCH,com.nokia.eda.vmware.v1.VmwarePluginInstance,,false,false,false
 /apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name},PUT,com.nokia.eda.vmware.v1.VmwarePluginInstance,vmware_plugin_instance,true,false,true
 /apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name}/_revs,GET,ResourceHistory,,false,false,false
 /apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name}/_targets,GET,IntentTargets,,false,false,false

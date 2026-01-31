@@ -13,11 +13,6 @@ k8_s_topology_request:
       path: /apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name}/_topology
       method: POST
 
-patch:
-  - update:
-      path: /apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name}
-      method: PATCH
-
 resource_history:
   - read:
       path: /apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name}/_revs
@@ -53,6 +48,9 @@ com.nokia.eda.vmware.v1.vmware_plugin_instance:
   - update:
       path: /apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name}
       method: PUT
+  - update:
+      path: /apps/vmware.eda.nokia.com/v1/vmwareplugininstances/{name}
+      method: PATCH
 
 com.nokia.eda.vmware.v1.vmware_plugin_instance_list:
   - read:
@@ -69,8 +67,8 @@ com.nokia.eda.vmware.v1.vmware_plugin_instance_deleted_resources:
 
 totalPaths: 9
 totalSchemas: 54
-usedSchemas: 12
-unusedSchemas: 42
+usedSchemas: 11
+unusedSchemas: 43
 unusedSchemaList:
   - AppGroupVersion
   - ErrorIndex
@@ -79,6 +77,7 @@ unusedSchemaList:
   - IntentTarget
   - K8SPatchOp
   - OverlayState
+  - Patch
   - Resource
   - ResourceHistoryEntry
   - StatusDetails
